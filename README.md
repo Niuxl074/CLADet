@@ -38,14 +38,31 @@ Overall architecture of ESODNet with a lightweight backbone, the CSAD neck, and 
 
 ## 🎮 Getting Started
 
-### 1. Install Environment Prepare Dataset
+### 1. Install Environment 
+```bash
+   conda create --name ESODNet python=3.8
+   conda activate ESODNet
+
+   # Install PyTorch (CUDA 11.1)
+   pip install torch==1.10.0+cu111 torchvision==0.11.0+cu111 torchaudio==0.10.0 \
+     -f https://download.pytorch.org/whl/torch_stable.html
+
+   # Install mmcv and mmengine
+   pip install mmcv==2.1.0 mmengine==0.9.0
+
+   # Clone this repo and install dependencies
+   git clone https://github.com/niuxuelei/ESODNet.git
+   cd ESODNet
+   pip install -r requirements.txt
+
+### 1.  Prepare Dataset
 
 ```text
-# 1) 下载 DOTA-v1.0 和 DIOR 数据集
-#    DOTA-v1.0: https://captain-whu.github.io/DOTA/index.html
-#    DIOR:      https://gcheng-nwpu.github.io/#Datasets
-#
-# 2) 将数据集整理成如下目录结构（以 DOTA-v1.0 为例）
+1) 下载 DOTA-v1.0 和 DIOR 数据集
+   DOTA-v1.0: https://captain-whu.github.io/DOTA/index.html
+   DIOR:      https://gcheng-nwpu.github.io/#Datasets
+
+2) 将数据集整理成如下目录结构（以 DOTA-v1.0 为例）
 
 dataset/
 ├── DOTA-v1.0/
