@@ -205,7 +205,7 @@ class yolov8_heatmap:
         
 def get_params():
     params = {
-        'weight': '/ESODNet/runs/train/exp_yolov8n-FDPN-LSCD-DOTA-v1.0/weights/best.pt', # 现在只需要指定权重即可,不需要指定cfg
+        'weight': '/CLADet/runs/train/exp_yolov8n-CLAD-LFTA-DOTA-v1.0/weights/best.pt', 
         'device': 'cuda:0',
         'method': 'HiResCAM', # GradCAMPlusPlus, GradCAM, XGradCAM, EigenCAM, HiResCAM, LayerCAM, RandomCAM, EigenGradCAM
         # 'layer': [10, 12, 14, 16, 18],
@@ -220,5 +220,4 @@ def get_params():
 
 if __name__ == '__main__':
     model = yolov8_heatmap(**get_params())
-    # model(r'/ESODNet/dataset/DOTA-v1.0/test/images/00026.jpg', 'result')
-    model(r'/ESODNet/dataset/DOTA-v.10/images/test', 'heatmap/yolov8n-FDPN-LSCD-DOTA-v1.0/10_HiResCAM111')
+    model(r'/CLADett/dataset/DOTA-v.10/images/test', 'heatmap/yolov8n-CLAD-LFTA-DOTA-v1.0/10_HiResCAM111')
