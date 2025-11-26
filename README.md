@@ -1,6 +1,6 @@
-# ESODNet
+# CLADet
 [JAG 2025] Code for "CLADet: A Cross-Level Feature Integration and Adaptive Diffusion Approach for Remote Sensing Tiny Target Detection"
-# 📦 ESODNet
+# 📦 CLADet
 
 ## 📖 Introduction
 
