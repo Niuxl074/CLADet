@@ -3,9 +3,9 @@ warnings.filterwarnings('ignore')
 from ultralytics import YOLO
 
 if __name__ == '__main__':
-    model = YOLO('/ESODNet/ultralytics/cfg/models/v8/yolov8n-FDPN-LSCD.yaml')
+    model = YOLO('/CLADet/ultralytics/cfg/models/v8/yolov8n-CLAD-LFTA.yaml')
    
-    model.train(data='/ESODNet/ultralytics/cfg/datasets/DOTA-v1.0.yaml',
+    model.train(data='/CLADet/ultralytics/cfg/datasets/DOTA-v1.0.yaml',
                 cache=False,
                 imgsz=640,
                 epochs=300,
@@ -17,7 +17,7 @@ if __name__ == '__main__':
                 amp=False, 
                 # fraction=0.2,
                 project='runs/train',
-                name='exp_yolov8n-FDPN-LSCD1_DOTA-v1.0',
+                name='exp_yolov8n-CLAD-LFTA_DOTA-v1.0',
                 )
 
 
